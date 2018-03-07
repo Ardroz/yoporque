@@ -1,0 +1,59 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/iron-swipeable-container/iron-swipeable-container.html">
+
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+
+<dom-module id="swipe-mexico-app">
+  <template>
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <div id="step0">
+      <iron-swipeable-container on-iron-swipe="_swipeDone">
+        <paper-card heading="Desliza para iniciar" data-step="0"></paper-card>
+      </iron-swipeable-container>
+    </div>
+
+    <div id="step1" hidden>
+      <span class="step-header">¿Quién esta más guapo?</span>
+      <iron-swipeable-container on-iron-swipe="_swipeDone">
+        <paper-card heading="Obrador es un adonis griego" data-step="1" data-value="A1"></paper-card>
+        <br>
+        <paper-card heading="Meade por ser un macho alfa pelo en pecho" data-step="1" data-value="B1"></paper-card>
+      </iron-swipeable-container>
+    </div>
+
+    <div id="step2" hidden>
+      <span class="step-header">¿Quien gana en un 1v1?</span>
+      <iron-swipeable-container on-iron-swipe="_swipeDone">
+        <paper-card heading="Obrador brazos de albañil" data-step="2" data-value="A2"></paper-card>
+        <br>
+        <paper-card heading="Meade manos de Trump" data-step="2" data-value="B2"></paper-card>
+      </iron-swipeable-container>
+    </div>
+
+    <div id="step3" hidden>
+      <span class="step-header">Last Round</span>
+      <iron-swipeable-container on-iron-swipe="_swipeDone">
+        <paper-card heading="Cabello corto" data-step="3" data-value="A3" data-final="true"></paper-card>
+        <br>
+        <paper-card heading="Cabello largo" data-step="3" data-value="B3" data-final="true"></paper-card>
+      </iron-swipeable-container>
+    </div>
+
+    <div id="stepfinal" hidden>
+      <paper-card heading="¡Sal a votar!">
+        <div class="card-content">
+          <paper-input label="Ingresa tu correo."></paper-input>
+        </div>
+        <div class="card-actions">
+          <paper-button>¡Quiero informarme!</paper-button>
+        </div>
+      </paper-card>
+    </div>
+
+  </template>
+
+  <script src="swipe-mexico-app.js"></script>
+</dom-module>
