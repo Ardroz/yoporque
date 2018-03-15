@@ -7,8 +7,9 @@ iron-swipeable-container {
 }
 
 :host {
-  background-image: url(../images/doodles.png);
+  background-image: url(../images/danPNG.png);
   background-repeat: repeat;
+  background-size: 450px;
 }
 
 .step-header {
